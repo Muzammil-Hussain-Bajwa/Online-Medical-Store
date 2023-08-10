@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Contact
+{% endblock title %}
+
+
+{% block body %}
+<div class="container-fluid px-0 mb-3" >
+  <img src="https://source.unsplash.com/1200x400/?phone,contact" class="d-block w-100 mx-0" alt="...">
+</div>
+<h2 align="center">This is our Contact Number 03238820713</h2>
+<form method="post" action="/contact">
+
+<div class="container mb-3 py-4">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name Here">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" name="email" placeholder="Enter Your Email Here">
+  </div>
+  <div class="form-group">
+    <label for="Phone">Phone</label>
+    <input type="Phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number Here">
+  </div>
+  <div class="form-group">
+    <label for="desc" class="form-label">Tell Me About What You Wants To Contact Me For...
+    </label>
+    <textarea class="form-control" id="desc" rows="3"></textarea>
+  </div>
+<div>
+  <button type="button" class="btn btn-primary">Submit</button>
+</div>
+
+
+
+</form>
+</div>
+
+{% endblock body %}
+
